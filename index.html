@@ -1,48 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cricket Fun</title>
     <style>
-        .field{
-            /* border: 1px solid red; */
-        }
-        .bat{
-            width: 400px;
-            transition: transform .2s ease 0s;
-        }
-        .field:hover .bat{
-           transform: rotate(-60deg); 
-           transform-origin: 100% 0%;
-        }
-        .ball{
-            height: 50px;
-            width: 50px;
-            background-color: red;
-            border-radius: 50%;
-            position: relative;
-            left: 515px;
-            bottom: 10px;
-            transition: transform 2s ease-in-out 0.24s;
-        }
-        .field:hover .ball{
-            transform: translate(1000px, -300px);
-        }
-      
+      .field {
+        margin-top: 150px;
+      }
 
-        
+      .bat {
+        width: 350px;
+        transition: transform .2s ease 0s;
+      }
+
+      .field:hover .bat {
+        transform: rotate(-60deg) scale(0.90);
+        transform-origin: 100% 0%;
+      }
+
+      .ball {
+        position: relative;
+        left: -124px;
+        bottom: -20px;
+        transition: transform 3s ease-in-out 0.22s;
+        transform: scale(1.8);
+      }
+
+      .field:hover .ball {
+        transform: translate(1000px, -280px) scale(0.7) rotate(+0.5turn);
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="field">
-        <img src="images/bat10.png" class="bat" alt="">
-        <div class="ball">
-
-        </div>
+      <img src="images/bat10.png" class="bat" alt="">
+      <img src="images/ball.png" class="ball" alt="">
     </div>
-
-    
-</body>
+  </body>
 </html>
